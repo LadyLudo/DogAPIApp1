@@ -4,7 +4,7 @@ function getDogImages() {
     let number = $("input[type='text']").val();
     fetch(`https://dog.ceo/api/breeds/image/random/${number}`)
         .then(response => response.json())
-        .then(responseJson => console.log(responseJson.message))
+        .then(responseJson => console.log(responseJson))
         .catch(error => alert('Something went wrong. Try again later.'));
 }
 function watchForm() {
